@@ -10,10 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class checkScript {
 	
-	public static void main(String args[]) throws InterruptedException {
+	@Test
+	public static void checkDate() throws InterruptedException {
 	System.setProperty("webdriver.chrome.driver", "C://Users//nairs//chromedriver_win32//chromedriver.exe");
 	WebDriver driver =  new ChromeDriver();
 	driver.manage().window().maximize();
