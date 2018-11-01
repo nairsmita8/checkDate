@@ -48,7 +48,7 @@ public class checkScript {
 	String date = driver.findElement(By.xpath("//div[text()='H-1B - Specialty occupation - Change of status in the U.S.']/following-sibling::div")).getText();
 	
 	Assert.assertEquals("H-1B - Specialty occupation - Change of status in the U.S.", name,"The name is "+name);
-	Assert.assertEquals("February 24, 2018", date,"Date is "+date);
+	Assert.assertEquals("February 23, 2018", date,"Date is "+date);
 	
 	driver.quit();
 	}
